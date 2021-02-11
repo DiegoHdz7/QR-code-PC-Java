@@ -2,28 +2,70 @@
   <html lang="en">
       <head>
           <meta charset="utf-8">  
-          <title>Webpage</title>
+          <title>Sistema Especial de Seguridad Privada</title>
+          <script src= "script.js"> </script>
+          <link rel="stylesheet" href="style.css">
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 
       </head>
 
       <body>
 
         <header>
-            <h1>kONOSUBA</h1>
-            <p>KONO SUbarashii sekai ni shukufuku wo</p>
+            <img id="logo"alt="company's logo"src="images/logo-2020.webp">
+            <h1 id="title"> Sistema Especial de Seguridad Privada</h1>
         </header>
 
         <nav>
-            ID: <input type="text">
-            Password <input type="password">
-            <input type="button" value="Sign in">
+            <label for="idInput">ID: </label>
+            <input id ="idInput" type="text">
+
+            <label for="pswInput">Password </label>
+            <input id="pswInput"type="text">
+
+            <button  id = "btn1" onclick="signIn();"> sign In </button>
             <a href="signUp.html">Sign up </a>
         </nav>
         
 
 
         <footer>
-            company's info and copyright
+
+            <section id="firstInfo">
+                <div id="contactInfo">
+                    <div id="itemsFirstInfo">
+                        <h2>Más información</h2>
+                        <p>CALLE 17 #403 POR 40 Y 42 FRACC. JARDINES DE LINDAVISTA MERIDA MERIDA, YUCATAN, MX</p>
+                        <p> 999-9879023</p>
+                        <p>sesp_06@hotmail.com</p>
+                        <h2>Socializar</h2>
+                        <p>+529999879023</p>
+                        <a href="https://www.facebook.com/SistemaEspecialdeSeguridadPrivada" target="_blank">Facebook</a>
+                        <p>Horario:  09:00 am - 05:00 pm</p>
+                        <a href="https://api.whatsapp.com/message/6KVBLVMNGLDMC1" target="_blank">whatsapp</a>
+
+                    </div>
+                    
+    
+                </div>
+    
+                <div id="localPic">
+                    <img id="img-fachada"src="images/fachada.webp" alt="Picture of the facility">
+                </div>
+
+            </section>
+
+            <section id="secondInfo">
+                <span>Teléfono: 999-9879023</span>
+                <span>Correo electrónico: sesp_06@hotmail.com</span>
+                <span>Dirección: CALLE 17 #403 POR 40 Y 42 FRACC. JARDINES DE LINDAVISTA</span>
+                <a href="http://seguridadprivadamerida.com.mx/avisodeprivacidad.html" target="_blank">aviso de privacidad</a>
+            </section>
+
+            
+           
+           
         </footer>
           
 
