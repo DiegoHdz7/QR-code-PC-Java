@@ -67,3 +67,5 @@ function checkSignIN(){
     }
 
 }
+
+var newClass = new myClass("name","lastName","id");
