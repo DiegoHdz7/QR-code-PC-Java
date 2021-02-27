@@ -3,7 +3,7 @@
       <head>
           <meta charset="utf-8">  
           <title>Sistema Especial de Seguridad Privada</title>
-          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="../css/style.css">
           <link rel="preconnect" href="https://fonts.gstatic.com">
           <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 
@@ -12,20 +12,26 @@
       <body>
 
         <header>
-            <img id="logo"alt="company's logo"src="images/logo-2020.webp">
+            <img id="logo"alt="company's logo"src="../images/logo-2020.webp">
             <h1 id="title"> Sistema Especial de Seguridad Privada</h1>
         </header>
 
         <nav>
-            <label for="idInput">ID: </label>
-            <input id ="idInput" type="text">
+            <label for="usrNameInput">ID: </label>
+            <input id ="usrNameInput" type="text">
 
             <label for="pswInput">Password </label>
             <input id="pswInput"type="text">
 
-            <button  id = "btn1"> sign In </button>
+            <button  id = "btnSignIn"> sign In </button>
             <a href="signUp.html">Sign up </a>
         </nav>
+
+        <div id="pageContent">
+            <h3>Add Manager</h3>
+            <h3>Add Employee</h3>
+            <h3>Search Employee</h3>
+        </div>
         
 
 
@@ -50,7 +56,7 @@
                 </div>
     
                 <div id="localPic">
-                    <img id="img-fachada"src="images/fachada.webp" alt="Picture of the facility">
+                    <img id="img-fachada"src="../images/fachada.webp" alt="Picture of the facility">
                 </div>
 
             </section>
@@ -63,10 +69,10 @@
             </section>
 
             
-           <p id="test"><span id="testSpan"></span></p>
+           
            
         </footer>
-          
-        <script src= "script.js"> </script>
+          <script src="../js/classes.js"></script>
+        <script src= "../js/script.js"> </script>
       </body>
   </html>

@@ -1,4 +1,4 @@
-tbody{
+/*tbody{
     display: flex;
     flex-flow: column;
 }
@@ -7,6 +7,11 @@ tr{
     background-color: blueviolet;
     flex: 1 1 200px;
     border: 2px solid black; 
+}*/
+
+table{
+    margin-left:auto;
+    margin-right: auto;
 }
 
 
@@ -120,4 +125,13 @@ footer{
 
 #secondInfo >a{
     border-right: 0 !important;
+}
+
+
+
+/**** INDEX CONTENT OPTIONS *********/
+#pageContent{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
