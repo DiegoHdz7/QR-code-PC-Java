@@ -1,22 +1,3 @@
-/*tbody{
-    display: flex;
-    flex-flow: column;
-}
-
-tr{
-    background-color: blueviolet;
-    flex: 1 1 200px;
-    border: 2px solid black; 
-}*/
-
-/*table{
-    margin-left:auto;
-    margin-right: auto;
-}*/
-
-
-/*index page*/
-/*
 body{
     font-size: 100%;
     margin: 0;
@@ -28,6 +9,7 @@ header{
     background-color: rgb(51, 53, 54);
     justify-content: center;
     padding-top: 2rem;
+   
 }
 
 
@@ -125,55 +107,52 @@ footer{
 
 #secondInfo >a{
     border-right: 0 !important;
-}*/
+}
 
 
 
-/**** INDEX CONTENT OPTIONS *********
+/**** INDEX CONTENT OPTIONS *********/
 #pageContent{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-color: black;
+    background-color: rgb(90, 93, 94);;
     color: white;
+   
 }
 
+#pageContent>*{
+    
+    border: 0.2rem solid white;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
 
-/**** page content options************
+/**** page content options************/
 
 .pageContent_options:hover{
     background-color: white;
     color: black;
-    /*font-size: 1.3rem;
 }
 
 #showContent{
     background-color: black;
     color: white;
 
-}*/
-
-
-
-
-
-
-
-
-
-/*********************** another archieve*****************************/
-/*****Add Employee***********************/
-form{
-   width: 25%;
-    margin: 2rem auto 2rem auto;
-    
-    
 }
 
-input:invalid {
-    background-color:pink;
-  }
-  
-  input:valid {
-    background-color:lightgreen;
-  }
+table{
+    margin-left:auto;
+    margin-right: auto;
+    background-color: rgb(90, 93, 94);
+    color: white;
+    border-collapse: collapse;
+}
+
+
+th, td {
+    border: 2px solid white;
+    text-align: center;
+    padding: 1rem;
+   
+}

@@ -15,6 +15,24 @@ class Employee {
     static getEmployeesNumber(){
         return Employee.employeesNumber;
     }
+
+    static addToEmployeeList(name, fLastName, mLastName, rfc, curp,phone){
+        employeesList.push(new Employee(name, fLastName, mLastName, rfc, curp,phone));
+
+    }
+
+    static updateEmployeesList(){
+        if(localStorage.EmployeeList!=undefined){
+            employeesList = JSON.parse(localStorage.EmployeeList);
+            localStorage.EmployeeList=JSON.stringify(employeesList);
+        }
+    }
+
+    static updateLocalEmployeesList(){
+        if(employeesList!=undefined && employeesList!=null){
+            localStorage.EmployeeList=JSON.stringify(employeesList);
+        }
+    }
 }
 
 Employee.employeesNumber = 0;
@@ -51,5 +69,7 @@ var managersList= [
     new Manager("Naruto","Uzumaki","Hyuga","123456789"),
 
 ];
+
+
 
 

@@ -3,16 +3,15 @@
       <head>
           <meta charset="utf-8">  
           <title>Sistema Especial de Seguridad Privada</title>
-          <link rel="stylesheet" href="../css/index.css">
+          <link rel="stylesheet" href="../css/style.css">
           <link rel="preconnect" href="https://fonts.gstatic.com">
           <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-          <script src="../jquery_v_3_6.js"></script>
 
       </head>
 
       <body>
 
-        <header> 
+        <header>
             <img id="logo" alt="company's logo" src="../images/logo-2020.webp">
             <h1 id="title"> Sistema Especial de Seguridad Privada</h1>
         </header>
@@ -22,23 +21,29 @@
             <input id ="usrNameInput" type="text">
 
             <label for="pswInput">Password </label>
-            <input id="pswInput"type="text">
+            <input id="pswInput" type="text">
 
             <button  id = "btnSignIn"> sign In </button>
             <a href="signUp.html">Sign up </a>
         </nav>
 
-        <div id="pageContent">
-            <h3 class="pageContent_options">Add Manager</h3>
-            <h3 class="pageContent_options">Remove Manager</h3>
-            <h3 class="pageContent_options"><a id="addEmployee" href="addEmployee.html">Add Employee</a> </h3>
-            <h3 class="pageContent_options">Remove Employee</h3>
-            <h3 class="pageContent_options">Search Employee</h3>
-            <h3 class="pageContent_options" id="viewEmployeeList">View Employee List</h3>
-        </div>
+       
 
-        <div id="showContent">
-        </div>
+        <form action="" method="POST" id="formAddEmployee">
+            <fieldset>
+                <legend> Agregar Empleado</legend>
+                <label for="name">Nombre(s):<br><input required id="name" type="text"></label><br>
+                <label for="fLastName">Apellido Paterno:<br><input  id="fLastName" type="text" required></label><br>
+                <label for="mLastName">Apellido Materno:<br><input required id="mLastName" type="text"></label><br>
+                <label for="rfc">RFC:<br><input required id="rfc" type="text"></label><br>
+                <label for="curp">CURP:<br><input required id="curp" type="text"></label><br>
+                <label for="phone">Teléfono:<br><input required id="phone" type="tel"></label><br>
+                
+            </fieldset>
+
+            <button  id="btnAddEmployee"> Agregar</button>
+            <a href="index.html">regresar</a>
+        </form>
         
 
 
@@ -63,7 +68,7 @@
                 </div>
     
                 <div id="localPic">
-                    <img id="img-fachada"src="../images/fachada.webp" alt="Picture of the facility">
+                    <img id="img-fachada" src="../images/fachada.webp" alt="Picture of the facility">
                 </div>
 
             </section>
@@ -80,6 +85,6 @@
            
         </footer>
           <script src="../js/classes.js"></script>
-        <script src= "../js/indexJS.js"> </script>
+        <script src= "../js/addEmployee.js"> </script>
       </body>
   </html>
